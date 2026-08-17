@@ -138,30 +138,6 @@ src/components/   interface React
 src/state.ts      état applicatif et enchaînement du traitement
 ```
 
-La logique métier est testée indépendamment de l'interface. Les tests d'intégration s'exécutent sur
-les vrais fichiers s'ils sont présents à la racine, et sont ignorés sinon — ils ne sont pas
-versionnés.
-
----
-
-## Mise en ligne sur GitHub Pages
-
-1. Créer un dépôt GitHub et y pousser ce projet :
-
-   ```bash
-   git init
-   git add .
-   git commit -m "DKV Aiguillage"
-   git branch -M main
-   git remote add origin https://github.com/<votre-compte>/<votre-depot>.git
-   git push -u origin main
-   ```
-
-2. Dans le dépôt : **Settings → Pages → Source → GitHub Actions**.
-
-3. Le workflow `.github/workflows/deploy.yml` construit et publie le site à chaque push sur `main`.
-   L'URL apparaît dans l'onglet *Actions* à la fin du déploiement.
-
 > **Les fichiers de données ne doivent jamais être poussés.** Le `.gitignore` exclut déjà `*.xlsx`,
 > `*.xls` et `*.txt` à la racine. Vérifiez avec `git status` avant le premier commit : les exports
 > DKV et les relevés kilométriques contiennent des données nominatives et commerciales.
