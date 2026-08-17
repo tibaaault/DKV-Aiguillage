@@ -1,0 +1,25 @@
+node_modules/
+dist/
+.vite/
+*.local
+.DS_Store
+Thumbs.db
+
+# Artefacts de compilation incrementale
+*.tsbuildinfo
+
+# --------------------------------------------------------------------------
+# DONNEES D'ENTREPRISE - NE JAMAIS PUBLIER SUR GITHUB
+# Les exports DKV et les releves kilometriques contiennent des donnees
+# nominatives et commerciales. Le site fonctionne entierement dans le
+# navigateur : ces fichiers n'ont aucune raison d'etre versionnes.
+# --------------------------------------------------------------------------
+*.xlsx
+*.xls
+*.xlsm
+*.csv
+*.txt
+!README.txt
+
+# Sauf la documentation
+!docs/**/*.txt

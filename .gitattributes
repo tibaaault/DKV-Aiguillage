@@ -1,0 +1,11 @@
+# Fins de ligne normalisees en LF dans le depot : le poste de travail est sous
+# Windows, la construction GitHub Actions sous Linux. Sans cela, chaque fichier
+# apparaitrait modifie d'un environnement a l'autre.
+* text=auto eol=lf
+
+# Fichiers binaires : aucune conversion.
+*.xlsx binary
+*.xls binary
+*.png binary
+*.jpg binary
+*.ico binary

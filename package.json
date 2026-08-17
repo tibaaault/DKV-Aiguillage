@@ -1,0 +1,30 @@
+{
+  "name": "dkv-aiguillage",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "DKV Aiguillage - aiguille chaque plein de carburant vers le bon camion et produit le recapitulatif trimestriel TICPE",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "exceljs": "^4.4.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "xlsx": "https://cdn.sheetjs.com/xlsx-0.20.3/xlsx-0.20.3.tgz"
+  },
+  "devDependencies": {
+    "@types/node": "^26.2.0",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.4",
+    "jsdom": "^29.1.1",
+    "typescript": "^5.7.2",
+    "vite": "^5.4.11",
+    "vitest": "^2.1.8"
+  }
+}
